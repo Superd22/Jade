@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@import '/assets/fonts/fonts';
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+html {
+  font-family: 'Lato';
+}
+
+$custom-typography: mat-typography-config($font-family: 'Lato, monospace');
+
+// Override typography CSS classes (e.g., mat-h1, mat-display-1, mat-typography, etc.).
+@include mat-base-typography($custom-typography);
+
+// Override typography for all Angular Material, including mat-base-typography and all components.
+@include angular-material-typography($custom-typography);
+
+body {
+  background: #29415d;
+}

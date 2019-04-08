@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+  # Mysql for wordpress
+  julie_mysql:
+    image: mysql:8.0.13
+    container_name: julie_mysql
+    command: --default-authentication-plugin=mysql_native_password
+    ports:
+      - "3306:3306"
+    restart: always
+    volumes:
+      # Store the data on the host
+      - ./data/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_DATABASE: "jade"
+      MYSQL_USER: "jade"
+      MYSQL_PASSWORD: "test"
+
+networks:
+  default:
+    external:
+      name: nginxproxy

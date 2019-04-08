@@ -1,0 +1,7 @@
+{
+    "AUTHENTICATE": {
+        "AUTHENTICATE_REQUIRED": "Authentification requise",
+        "AUTHENTICATE_REQUIRED_EXPLAIN": "Pour accèder aux services de matchmaking de Jade, il est obligatoire de t'identifier.",
+        "AUTHENTICATE_WITH": "Se connecter avec"
+    }
+}
