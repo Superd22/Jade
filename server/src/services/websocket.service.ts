@@ -17,6 +17,7 @@ export class WebSocketService {
 
     public constructor() {
         createSocketServer(3001, {
+            useClassTransformer: false,
             controllers: [
                 __dirname + `/../controllers/**.controller.ts`,
                 __dirname + `/../controllers/**.controller.js`,

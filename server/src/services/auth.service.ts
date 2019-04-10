@@ -8,11 +8,24 @@ export class AuthService {
         return jwt.sign({ userId }, JadeConfig.jwtSecret);
     }
 
-    public verifyJWT(jwtPayload: string) {
+    /**
+     * Verify that a JWT is signed and returns it
+     * @param jwtPayload the payload we got as string
+     */
+    public verifyJWT(jwtPayload: string): JWToken | null {
         const token = jwt.verify(jwtPayload, JadeConfig.jwtSecret);
 
-        if (token) { return token; }
-        else return false;
+        if (token) { return token as JWToken; }
+        else return null;
     }
 
+
+}
+
+/**
+ * JWT exchanged with the front
+ */
+export interface JWToken {
+    /** userid of the user currently auth'd */
+    userId: number;
 }

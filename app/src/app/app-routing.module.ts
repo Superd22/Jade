@@ -9,7 +9,6 @@ const routes: Routes = [
         path: 'platform',
         loadChildren: './platform/platform.module#PlatformModule',
         canActivate: [AuthGuard],
-        canActivateChild: [AuthGuard]
     },
     { path: 'authenticate', loadChildren: './authenticate/authenticate.module#AuthenticateModule' }
 ];

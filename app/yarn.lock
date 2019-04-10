@@ -378,7 +378,7 @@
   dependencies:
     tslib "^1.9.0"
 
-"@ngxs/store@^3.4.3":
+"@ngxs/store@>=3.4.0", "@ngxs/store@^3.4.3":
   version "3.4.3"
   resolved "https://registry.yarnpkg.com/@ngxs/store/-/store-3.4.3.tgz#cf2f3b95e6be814742754c7f24e53b2b6392bb47"
   integrity sha512-pVwxFxCxr09+zL37ot1hf6EhgpftNLSAseBZwHUlx40x2qAT+jat8XJlj4j0p+BoVEjlaVZn8zE6qMm2oSPlZw==
@@ -4657,6 +4657,14 @@ neo-async@^2.5.0, neo-async@^2.6.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.0.tgz#b9d15e4d71c6762908654b5183ed38b753340835"
   integrity sha512-MFh0d/Wa7vkKO3Y3LlacqAEeHK0mckVqzDieUKTT+KGxi+zIpeVsFxymkIiRpbpDziHc290Xr9A1O4Om7otoRA==
 
+ngxs-socketio-plugin@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/ngxs-socketio-plugin/-/ngxs-socketio-plugin-1.1.0.tgz#2a416ae6bb2daf1c572d2a03ec82f5c2bae62782"
+  integrity sha512-E0Q0yCNxAWCb/qKP+XE+Z91bNMoIqthH7YeK0vTGgnK3XfDe4FiHIrhB8/G389NfjfAqur4pF70x5Ew8GF9Mdg==
+  dependencies:
+    "@ngxs/store" ">=3.4.0"
+    socket.io-client ">=2.2.0"
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
@@ -6272,7 +6280,7 @@ socket.io-client@2.1.1:
     socket.io-parser "~3.2.0"
     to-array "0.1.4"
 
-socket.io-client@^2.2.0:
+socket.io-client@>=2.2.0, socket.io-client@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/socket.io-client/-/socket.io-client-2.2.0.tgz#84e73ee3c43d5020ccc1a258faeeb9aec2723af7"
   integrity sha512-56ZrkTDbdTLmBIyfFYesgOxsjcLnwAKoN4CiPyTVkMQj3zTUh0QAx3GbvIvLpFEOvQWu92yyWICxB0u7wkVbYA==

@@ -24,8 +24,17 @@ export class DiscordController {
                 const userData = await this._discord.getCurrentUser(token.access_token);
                 if (userData) {
                     let user = await User.findOne({ where: { email: userData.email } });
-                    if (!user) { user = await User.create(); }
-                    User.update({ id: user.id }, { email: userData.email, discordData: userData, discordToken: token });
+
+                    if (!user || !user.id) {
+                        user = await User.create();
+                    }
+
+                    user.email = userData.email;
+                    user.discordData = userData;
+                    user.discordToken = token;
+
+                    await user.save();
+
                     const jwt = this._auth.createJWT(user.id);
                     return { type: "[Auth] Got JWT", jwt };
                 }

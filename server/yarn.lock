@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@momothepug/tsmodule-alias@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@momothepug/tsmodule-alias/-/tsmodule-alias-1.0.0.tgz#15308a86aa7233861459d03d06d705f04843e714"
+  integrity sha512-WGiRHkMGnLBgXCj5m0NAMejc8g+CqGAJIQYsDKHWMRnbAUo4uxWFrCgVnB/tnziScNXrZLm51VMOqLYQJro0+A==
+  dependencies:
+    "@types/node" "^9.4.5"
+    rtrim "^1.0.0"
+    typescript "^2.7.1"
+
 "@types/bluebird@*":
   version "3.5.26"
   resolved "https://registry.yarnpkg.com/@types/bluebird/-/bluebird-3.5.26.tgz#a38c438ae84fa02431d6892edf86e46edcbca291"
@@ -67,6 +76,11 @@
   version "11.13.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.13.0.tgz#b0df8d6ef9b5001b2be3a94d909ce3c29a80f9e1"
   integrity sha512-rx29MMkRdVmzunmiA4lzBYJNnXsW/PhG4kMBy2ATsYaDjGGR75dCFEVVROKpNwlVdcUX3xxlghKQOeDPBJobng==
+
+"@types/node@^9.4.5":
+  version "9.6.47"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-9.6.47.tgz#655b4a1cc52c8ab08f48cc055061990d6846bc97"
+  integrity sha512-56wEJWXZs+3XXoTe/OCpdZ6czrONhy+6hT0GdPOb7HvudLTMJ1T5tuZPs37K5cPR5t+J9+vLPFDQgUQ8NWJE1w==
 
 "@types/range-parser@*":
   version "1.2.3"
@@ -1263,6 +1277,11 @@ mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
+module-alias@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/module-alias/-/module-alias-2.2.0.tgz#a2e32275381642252bf0c51405f7a09a367479b5"
+  integrity sha512-O4bbvlZkHj2LUQhieQWWCr486ddc8X+WwRqi3QGnFKfknaxdHTOB7+xRgeyWHc6arpjgtT5SLLMMTFwUM3/x5w==
+
 ms@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
@@ -1618,6 +1637,11 @@ rimraf@^2.6.3:
   integrity sha512-mwqeW5XsA2qAejG46gYdENaxXjx9onRNCfn7L0duuP4hCuTIi/QO7PDK07KJfp1d+izWPrzEJDcSqBa0OZQriA==
   dependencies:
     glob "^7.1.3"
+
+rtrim@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rtrim/-/rtrim-1.0.0.tgz#60fb47a18624d6c14ff282c91de08c6e5779e8d9"
+  integrity sha1-YPtHoYYk1sFP8oLJHeCMbld56Nk=
 
 rxjs@^6.4.0:
   version "6.4.0"
@@ -1975,6 +1999,11 @@ typeorm@^0.2.16:
     xml2js "^0.4.17"
     yargonaut "^1.1.2"
     yargs "^13.2.1"
+
+typescript@^2.7.1:
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
+  integrity sha512-Gr4p6nFNaoufRIY4NMdpQRNmgxVIGMs4Fcu/ujdYk3nAZqk7supzBE9idmvfZIlH/Cuj//dvi+019qEue9lV0w==
 
 typescript@^3.4.2:
   version "3.4.2"

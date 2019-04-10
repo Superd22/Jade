@@ -14,7 +14,6 @@ export class AuthenticateComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this._store.dispatch(new GotJWTAction('azeaze'));
     }
 
 }

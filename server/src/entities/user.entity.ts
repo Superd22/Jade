@@ -1,4 +1,4 @@
-import { Entity, PrimaryGeneratedColumn, Column, Unique, BaseEntity } from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, Unique, BaseEntity, PrimaryColumn } from "typeorm";
 import { DiscordToken } from "../controllers/discord.controller";
 import { DiscordUser } from "../interfaces/discord/user.interface";
 
@@ -9,7 +9,7 @@ export class User extends BaseEntity {
     id: number;
 
     /** current e-mail */
-    @Column({ nullable: true })
+    @PrimaryColumn()
     email: string;
 
     @Column({ type: "json", nullable: true })
